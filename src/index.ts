@@ -1,1 +1,1 @@
-﻿export { Component } from './Component'
+﻿export { useArray } from './useArray'
