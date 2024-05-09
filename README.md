@@ -16,3 +16,18 @@ export const App = () => {
     console.log(five_items) ## [1, 2, 3, 4, 5]
 }
 ```
+
+##### chunkArray
+a method that returns multiple arrays with specified max length given an inputed array
+
+```jsx
+import { useArray } from 'burgos-snackbar'
+
+export const App = () => {
+    const { chunkArray } = useArray()
+    const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const chunkedArray = chunkArray(originalArray, 4)
+
+    console.log(chunkedArray) ## [[1, 2, 3, 4] , [5, 6, 7, 8], [9]]
+}
+```
